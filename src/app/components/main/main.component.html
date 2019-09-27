@@ -1,0 +1,43 @@
+<main class="container mt-2">
+    <h4>Test!</h4>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Nombre
+                </th>
+                <th>
+                    Apellidos
+                </th>
+                <th>
+                    Edad
+                </th>
+                <th>
+                    DNI
+                </th>
+                <th>
+                    Año Ingreso
+                </th>
+                <th>
+                    Estado
+                </th>
+                <th>
+                    Acciones
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of items | async">
+                <td>{{item.nombres}}</td>
+                <td>{{item.apellidos}}</td>
+                <td>{{item.edad}}</td>
+                <td>{{item.dni}}</td>
+                <td>{{item.anio_ingreso}}</td>
+                <td>{{item.estado}}</td>
+                <td><button class="btn btn-warning">Editar</button></td>
+            </tr>
+            
+        </tbody>
+    </table>
+</main>
